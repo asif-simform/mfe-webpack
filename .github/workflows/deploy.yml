@@ -22,10 +22,10 @@ jobs:
       - name: Build
         run: |
           yarn install
-          yarn build:core-ui
           yarn build:app1
           yarn build:app2
-      
+          yarn build:core-ui
+
       - name: Copy MicroApp's in core-ui dist folder
         run : |
           yarn build:move
