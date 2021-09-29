@@ -27,8 +27,9 @@ jobs:
           yarn workspace app2 build
       
       - name: Copy MicroApp's in core-ui dist folder
-        run : cp -r ./packages/app1/dist ./packages/core-ui/dist/app1
-        run : cp -r ./packages/app2/dist ./packages/core-ui/dist/app2
+        run : |
+          cp -r ./packages/app1/dist ./packages/core-ui/dist/app1
+          cp -r ./packages/app2/dist ./packages/core-ui/dist/app2
 
       - name: Run Tests Locally
         run: npm run test
