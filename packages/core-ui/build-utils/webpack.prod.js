@@ -14,8 +14,8 @@ module.exports = {
     new HtmlWebpackPlugin({
       title: "Hello Webpack bundled JavaScript Project",
       template: path.resolve(__dirname, "..", "./src/index.html"),
-      app1RemoteEntry: getProdRemoteEntryUrl("https://xyz.com"),
-      app2RemoteEntry: getProdRemoteEntryUrl("https://abc.com"),
+      app1RemoteEntry: getProdRemoteEntryUrl("https://mfe-webpack.vercel.app/dist/app1"),
+      app2RemoteEntry: getProdRemoteEntryUrl("https://mfe-webpack.vercel.app/dist/app2"),
     }),
   ],
   devtool: "source-map",
