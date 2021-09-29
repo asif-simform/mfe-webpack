@@ -21,8 +21,10 @@ jobs:
  
       - name: Build
         run: |
-          yarn install --frozen-lockfile
-          npm run bundle
+          yarn install
+          yarn workspace app1 build
+          yarn workspace app2 build
+          yarn workspace core-ui build
  
       - name: Run Tests Locally
         run: npm run test
