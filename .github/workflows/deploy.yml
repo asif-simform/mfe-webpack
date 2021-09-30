@@ -30,9 +30,9 @@ jobs:
         run : |
           yarn build:move
       
-      - name: Create main build folder in rppt dir
+      - name: Create main build folder in root dir
         run : |
-          build:main
+          yarn build:main
 
       - name: Run Tests Locally
         run: npm run test
