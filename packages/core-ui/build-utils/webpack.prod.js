@@ -12,7 +12,7 @@ module.exports = {
       },
     }),
     new HtmlWebpackPlugin({
-      title: "Hello Webpack bundled JavaScript Project",
+      title: "Hello Webpack bundled JavaScript Project ",
       template: path.resolve(__dirname, "..", "./src/index.html"),
       app1RemoteEntry: getProdRemoteEntryUrl("https://mfe-webpack.vercel.app/app1"),
       app2RemoteEntry: getProdRemoteEntryUrl("https://mfe-webpack.vercel.app/app2"),
