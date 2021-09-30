@@ -29,6 +29,10 @@ jobs:
       - name: Copy MicroApp's in core-ui dist folder
         run : |
           yarn build:move
+      
+      - name: Create main build folder in rppt dir
+        run : |
+          build:main
 
       - name: Run Tests Locally
         run: npm run test

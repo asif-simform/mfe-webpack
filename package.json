@@ -16,7 +16,8 @@
     "build:core-ui": "yarn workspace core-ui build",
     "build:app1": "yarn workspace app1 build",
     "build:app2": "yarn workspace app2 build",
-    "build:move": "cp -r ./packages/app1/dist ./packages/core-ui/dist/app1 && cp -r ./packages/app2/dist ./packages/core-ui/dist/app2"
+    "build:move": "cp -r ./packages/app1/dist ./packages/core-ui/dist/app1 && cp -r ./packages/app2/dist ./packages/core-ui/dist/app2",
+    "build:main": "cp -r ./packages/core-ui/dist ./dist"
   },
   "devDependencies": {
     "@babel/core": "^7.14.0",
